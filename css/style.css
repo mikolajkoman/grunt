@@ -1,0 +1,311 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  background-color: #313234;
+  height: 50px; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container:not(nav) {
+  margin: 20px auto; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 0 15px; }
+
+/*Header */
+header nav img {
+  padding: 10px 0; }
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right; }
+  header nav ul li {
+    display: inline-block; }
+    header nav ul li a {
+      line-height: 50px;
+      padding: 0 20px;
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase; }
+      header nav ul li a:hover {
+        background: #ccc; }
+
+/*Section 1 */
+.hero {
+  background-image: url("https://static.pexels.com/photos/2740/nature-animal-fur-dangerous-large.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+
+.slogan {
+  float: right;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 200px 0 50px;
+  margin: 30vh 0;
+  font-size: 20px; }
+
+/*Section  2 */
+.benefits i[class*="fa"] {
+  font-size: 50px;
+  padding: 10px;
+  background-color: #313332;
+  border-radius: 15%;
+  cursor: pointer; }
+  .benefits i[class*="fa"]:hover {
+    background: #4099FF;
+    color: #FFFFFF;
+    cursor: pointer; }
+
+/*Galleria*/
+.gallery img {
+  width: 100%;
+  display: block; }
+
+.gallery .col-s-6, .gallery .col-m-3 {
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative; }
+  .gallery .col-s-6:hover .layer, .gallery .col-m-3:hover .layer {
+    opacity: 1;
+    cursor: pointer; }
+  .gallery .col-s-6 .layer, .gallery .col-m-3 .layer {
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.9);
+    opacity: 0;
+    transition: 1s; }
+    .gallery .col-s-6 .layer i[class*="fa"], .gallery .col-m-3 .layer i[class*="fa"] {
+      font-size: 25px;
+      padding: 5px;
+      background-color: #FFF;
+      border-radius: 15%;
+      color: #2D2F2E;
+      margin: 10px; }
+      .gallery .col-s-6 .layer i[class*="fa"]:hover, .gallery .col-m-3 .layer i[class*="fa"]:hover {
+        background: #4099FF; }
+
+/*Section 4*/
+.icon {
+  margin: 0 auto; }
+  .icon .img {
+    position: relative; }
+    .icon .img:hover .title {
+      opacity: 1;
+      cursor: pointer; }
+    .icon .img img {
+      border-radius: 50%;
+      display: block;
+      width: 100%;
+      position: relative; }
+    .icon .img .title {
+      top: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(50, 50, 50, 0.8);
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: 700;
+      opacity: 0;
+      transition: 1s;
+      border-radius: 50%; }
+  .icon p {
+    font-weight: bold; }
+
+/*Section image*/
+.image i, .image i:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 0;
+  font-size: 200px;
+  margin: 0 0px; }
+
+.image .col-s-4, .image .col-m-4 {
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+  position: relative; }
+  .image .col-s-4 .img, .image .col-m-4 .img {
+    top: -15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+    .image .col-s-4 .img img, .image .col-m-4 .img img {
+      cursor: pointer; }
+
+.num {
+  color: #00C1E4;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/*footer*/
+footer {
+  background-color: #313234;
+  color: white; }
+  footer .col-s-4:before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    border-bottom: 4px solid white;
+    width: 20%; }
+  footer h3 {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #313332;
+    padding-right: 5px; }
+
+.social i[class*="fa"] {
+  background: #4099FF;
+  border-radius: 0;
+  max-height: 100%;
+  font-size: 25px;
+  width: 50px;
+  margin-bottom: 4px; }
+
+.social .fa- {
+  color: #FFF; }
+
+.social .fa-google-plus:hover,
+.social .fa-youtube:hover {
+  color: #DB5A3C; }
+
+.social .fa-facebook:hover {
+  color: #3B5998; }
+
+.social .fa-twitter:hover {
+  color: #ebeef4; }
+
+.social .fa-instagram:hover {
+  color: #5C3D2E; }
+
+.social .fa-github:hover {
+  color: #4183C4; }
+
+.copy {
+  background-color: #252726;
+  color: white;
+  text-align: center; }
+
+@media (max-width: 479px) {
+  .col-s-1 {
+    width: 100%; }
+  .col-s-2 {
+    width: 100%; }
+  .col-s-3 {
+    width: 100%; }
+  .col-s-4 {
+    width: 100%; }
+  .col-s-5 {
+    width: 100%; }
+  .col-s-6 {
+    width: 100%; }
+  .col-s-7 {
+    width: 100%; }
+  .col-s-8 {
+    width: 100%; }
+  .col-s-9 {
+    width: 100%; }
+  .col-s-10 {
+    width: 100%; }
+  .col-s-11 {
+    width: 100%; }
+  .col-s-12 {
+    width: 100%; } }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .col-s-1 {
+    width: 8.3333333333%; }
+  .col-s-2 {
+    width: 16.6666666667%; }
+  .col-s-3 {
+    width: 25%; }
+  .col-s-4 {
+    width: 33.3333333333%; }
+  .col-s-5 {
+    width: 41.6666666667%; }
+  .col-s-6 {
+    width: 50%; }
+  .col-s-7 {
+    width: 58.3333333333%; }
+  .col-s-8 {
+    width: 66.6666666667%; }
+  .col-s-9 {
+    width: 75%; }
+  .col-s-10 {
+    width: 83.3333333333%; }
+  .col-s-11 {
+    width: 91.6666666667%; }
+  .col-s-12 {
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  .col-m-1 {
+    width: 8.3333333333%; }
+  .col-m-2 {
+    width: 16.6666666667%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-4 {
+    width: 33.3333333333%; }
+  .col-m-5 {
+    width: 41.6666666667%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-7 {
+    width: 58.3333333333%; }
+  .col-m-8 {
+    width: 66.6666666667%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-10 {
+    width: 83.3333333333%; }
+  .col-m-11 {
+    width: 91.6666666667%; }
+  .col-m-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
